@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AquaticExercises>
+    <AquaticExercise id="1">
+        <type>AquaAerobics</type>
+        <exercise_id>1</exercise_id>
+    </AquaticExercise>
+    <AquaticExercise id="2">
+        <type>Swimming</type>
+        <exercise_id>1</exercise_id>
+    </AquaticExercise>
+</AquaticExercises>

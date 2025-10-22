@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AthleticExercises>
+
+    <AthleticExercise id="1">
+        <type>Running</type>
+        <exercise_id>2</exercise_id>
+    </AthleticExercise>
+
+    <AthleticExercise id="2">
+        <type>Jumping</type>
+        <exercise_id>2</exercise_id>
+    </AthleticExercise>
+
+</AthleticExercises>

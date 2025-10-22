@@ -6,6 +6,8 @@ import com.solvd.fitness.model.FitnessGoal;
 import com.solvd.fitness.model.FitnessPlan;
 import com.solvd.fitness.model.Person;
 import com.solvd.fitness.service.ActivityLevelService;
+import com.solvd.fitness.service.AquaticExerciseXMLService;
+import com.solvd.fitness.service.AthleticExerciseXMLService;
 import com.solvd.fitness.service.FitnessCenterService;
 import com.solvd.fitness.service.FitnessGoalService;
 import com.solvd.fitness.service.FitnessPlanService;
@@ -26,6 +28,8 @@ public class Main {
         FitnessCenterService fitnessCenterService = new FitnessCenterService();
         FitnessGoalService fitnessGoalService = new FitnessGoalService();
         FitnessPlanService fitnessPlanService = new FitnessPlanService();
+        AthleticExerciseXMLService xmlService = new AthleticExerciseXMLService();
+        AquaticExerciseXMLService xmlService2 = new AquaticExerciseXMLService();
 
         for (ActivityLevel level : activityLevelService.getAllActivityLevels()) {
             LOGGER.info(level);
@@ -45,5 +49,8 @@ public class Main {
 
         Optional<FitnessCenter> fitnessCenter = fitnessCenterService.findByPerson(1);
         LOGGER.info(fitnessCenter);
+
+        LOGGER.info(xmlService.getAthleticExercises());
+        LOGGER.info(xmlService2.getAquaticExercises());
     }
 }
